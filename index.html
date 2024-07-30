@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+    <title>Challenge Encriptador de Texto</title>
+</head>
+<body >
+   <header class="text-center text-md text-blue-400 font-bold">
+    Alura Latam Encriptador de Texto</header>
+    <main >
+        <section id="text-block" class="bg-blue-200">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tu mensaje debe ser en Minusculas y sin caracteres especiales</label>
+            <textarea id="text-input" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-blue-100 rounded-lg border border-blue-300 mb-5 focus:ring-blue-500 focus:border-blue-500 dark:bg-blue-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escribe el texto a encriptar aqui..."></textarea>
+
+        <div class="inline-flex rounded-md shadow-sm justify-center" role="group">
+            <button type="button" id="btn-encriptar" onclick="encriptar()" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                Encriptar
+            </button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-r border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                Desencriptar
+            </button>
+             <button type="button" id="btn-copy"  class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b  border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                Copy
+            </button>
+            <button type="button" id="btn-clear" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                Clear
+            </button>
+          </div>
+  
+        </section>
+        <section id="contenedor-resultado" class="bg-blue-200">
+            <p>Aquí veras el resultado!</p>
+           <div id="resultado"></div>
+        </section> 
+    </main>
+   <footer>
+    <div class="text-center text-md">
+        Challenge by <a class="text-blue-400 font-bold" href="https://www.aluracursos.com/" target="_blank">Alura Latam</a>.
+        Coded by <a id="io" class="text-blue-400 font-bold" href="https://github.com/Ezequiel-Scheffer" target="_blank">Ezequiel Scheffer</a>
+      </div>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
+
